@@ -46,7 +46,6 @@ export class Login extends Component {
     }
 
     store = async ({result,message,data}) =>{
-        
         const {user_name,user_password} = data[0];
         console.log(user_name+" , "+user_password);
         await AsyncStorage.setItem('username',user_name);
